@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
-from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
+from rest_framework.generics import ListCreateAPIView, \
+                                    RetrieveUpdateDestroyAPIView
 
 from .serializers import ArtistSerializer
 from .models import Artist

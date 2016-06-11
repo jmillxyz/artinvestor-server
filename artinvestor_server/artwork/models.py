@@ -21,3 +21,6 @@ class Artwork(models.Model):
             self.slug = slugify(self.name)
 
         super(Artwork, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return self.name
