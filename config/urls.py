@@ -8,6 +8,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
+
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
@@ -20,8 +21,6 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
 
     # Your stuff: custom urls includes go here
-    url(r'^artists/', include('artinvestor_server.artists.urls', namespace='artists')),
-    url(r'^artwork/', include('artinvestor_server.artwork.urls', namespace='artwork')),
     url(r'^api/', include('artinvestor_server.api.urls', namespace='api')),
 
 

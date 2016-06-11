@@ -1,9 +1,10 @@
-from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer
+
 from .models import Artist
 
 
-class ArtistSerializer(serializers.ModelSerializer):
+class ArtistSerializer(ModelSerializer):
 
     class Meta:
         model = Artist
-        fields = ('name')
+        fields = ('id', 'name',)
