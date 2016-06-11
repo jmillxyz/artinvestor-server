@@ -22,6 +22,7 @@ urlpatterns = [
     # Your stuff: custom urls includes go here
     url(r'^artists/', include('artinvestor_server.artists.urls', namespace='artists')),
     url(r'^artwork/', include('artinvestor_server.artwork.urls', namespace='artwork')),
+    url(r'^api/', include('artinvestor_server.api.urls', namespace='api')),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

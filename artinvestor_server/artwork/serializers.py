@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from artwork.models import Artwork
 from artist.models import Artist
 from users.models import User
+from .models import Artwork
 
 
 class ArtworkSerializer(serializers.ModelSerializer):
