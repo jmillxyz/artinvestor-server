@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from rest_framework import generics
 
-# Create your views here.
+class ArtworkList(generics.ListAPIView):
+    queryset = Artwork.objects.all()
+    serializer_class = ArtworkSerializer

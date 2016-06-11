@@ -20,6 +20,8 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
 
     # Your stuff: custom urls includes go here
+    url(r'^artists/', include('artinvestor_server.artists.urls', namespace='artists')),
+    url(r'^artwork/', include('artinvestor_server.artwork.urls', namespace='artwork')),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

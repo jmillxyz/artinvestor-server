@@ -46,6 +46,7 @@ LOCAL_APPS = (
     'artinvestor_server.users',  # custom users app
     'artinvestor_server.artists',
     'artinvestor_server.artwork',
+    'rest_framework',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
