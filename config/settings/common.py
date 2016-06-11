@@ -44,7 +44,8 @@ THIRD_PARTY_APPS = (
 # Apps specific for this project go here.
 LOCAL_APPS = (
     'artinvestor_server.users',  # custom users app
-    # Your stuff: custom apps go here
+    'artinvestor_server.artists',
+    'artinvestor_server.artwork',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
