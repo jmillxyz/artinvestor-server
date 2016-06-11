@@ -1,0 +1,5 @@
+[run]
+include = artinvestor_server/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
