@@ -12,7 +12,7 @@ class Artwork(models.Model):
         'users.User',
         on_delete=models.CASCADE,
     )
-    photo = models.ImageField(upload_to='media')
+    photo = models.ImageField()
     slug = models.SlugField(unique=True)
 
     def save(self, *args, **kwargs):
